@@ -123,7 +123,7 @@ if st.button('Send'):
 
 import openai
 import streamlit as st
-!pip install openai streamlit
+
 
 
 # OpenAI API key ko set karein
@@ -175,7 +175,7 @@ if st.button('Send'):
     response = generate_response(user_input)
     st.write(f"AI: {response}")
 
-!pip install openai streamlit
+
 
 import openai
 import streamlit as st
