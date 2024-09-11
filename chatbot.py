@@ -1,12 +1,12 @@
 import openai
 import streamlit as st
 
-# OpenAI API key ko set karein
-openai.api_key = 'sk-5AF0armObv3N6VvreKReGSzeenA7y_39d0lCF0QcrjT3BlbkFJl-CTfDyW2aIRLw0vstlkf5_zckEL6yBU0SZelkubIA'
+# OpenAI API key ko set karein (yahaan apni new API key daalein)
+openai.api_key = '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'
 
 def generate_response(prompt):
     response = openai.ChatCompletion.create(
-        model="gpt-3.5-turbo",  # Latest model use karna
+        model="gpt-4",  # GPT-4 model use kar rahe hain
         messages=[
             {"role": "system", "content": "You are a helpful assistant."},
             {"role": "user", "content": prompt}
@@ -15,7 +15,7 @@ def generate_response(prompt):
     return response['choices'][0]['message']['content'].strip()
 
 # Streamlit app ka front-end
-st.title("AI Chatbot using OpenAI")
+st.title("AI Chatbot using GPT-4")
 
 # User input ke liye text box
 user_input = st.text_input("You: ", "Hello, how are you?")
