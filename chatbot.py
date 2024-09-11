@@ -67,7 +67,7 @@ if st.button('Send'):
 
 import openai
 import streamlit as st
-!pip install openai streamlit
+
 
 
 # OpenAI API key ko set karein
