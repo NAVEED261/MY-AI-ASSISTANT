@@ -4,8 +4,8 @@
 
 
 
-import streamlit as st
-from forex_python.converter import CurrencyRates
+# import streamlit as st
+# from forex_python.converter import CurrencyRates
 
 def currency_converter(amount, source_currency, target_currency):
   c = CurrencyRates()
