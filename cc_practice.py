@@ -9,8 +9,7 @@ Original file is located at
 
 # prompt: MAKE CURRENCY CONVERTER APP , FIRST IS SOURCE WHICH IS PKR AND 2NS IS TARGET WHICH IS  USD, EUR, GBP, YEN ,JPY, INR, SAR , DINAR, DIRHEM AND IN LAST OPTION IS TOTEL CALCULATIONS , THEN LIVE ON STREAMLIT
 
-!pip install streamlit
-!pip install forex-python
+
 
 import streamlit as st
 from forex_python.converter import CurrencyRates
